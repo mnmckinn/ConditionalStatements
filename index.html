@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let result1 = prompt("Enter a number: ");
+        result1 = parseInt(result1);
+
+        if (!(isNaN(result1))){
+            let x = prompt("Enter an operator: ");
+            //x = parseInt(x);
+            
+            if (x == "+"){
+                let result2 = prompt("Enter a number: ");
+                result2 = parseInt(result2);
+                
+                if(!(isNaN(result2))){
+                    finalResult = result1+result2;
+                    alert(finalResult);
+                }
+                else {alert("That is not a number.")}
+            }
+            
+            else if (x == "-"){
+                let result2 = prompt("Enter a number: ");
+                result2 = parseInt(result2);
+                
+                if(!(isNaN(result2))){
+                    finalResult = result1-result2;
+                    alert(finalResult);
+                }
+                else {alert("That is not a number.")}
+            }
+            
+            else if (x == "*"){
+                let result2 = prompt("Enter a number: ");
+                result2 = parseInt(result2);
+                
+                if(!(isNaN(result2))){
+                    finalResult = result1*result2;
+                    alert(finalResult);
+                }
+                else {alert("That is not a number.")}
+            }
+            
+            else if (x == "/"){
+                let result2 = prompt("Enter a number: ");
+                result2 = parseInt(result2);
+                
+                if(!(isNaN(result2))){
+                    finalResult = result1/result2;
+                    alert(finalResult);
+                }
+                else {alert("That is not a number.")}
+                
+            }
+
+        }
+        
+        else alert("That is not a number.")
+    </script>
+</body>
+</html>
